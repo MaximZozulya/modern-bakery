@@ -40,6 +40,10 @@
 }
 
 /* Base */
+* {
+  box-sizing: border-box;
+}
+
 body {
   color: var(--color-primary-dark);
   font-family: 'Poppins', sans-serif;
@@ -48,12 +52,35 @@ body {
   line-height: 1.5;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+
 address {
   font-style: normal;
 }
 
 ul {
   list-style-type: none;
+}
+
+.section {
+  padding: 48px 0;
+}
+
+.hidden {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 /* Button */
@@ -87,11 +114,16 @@ ul {
 }
 
 /* Hero section */
+.hero-section {
+  padding: 272px 0;
+}
+
 .hero-title {
   color: var(--color-primary-light);
   text-align: center;
   font-size: 128px;
   font-weight: 900;
+  margin-bottom: 0;
 }
 
 .hero-title .accent {
@@ -120,6 +152,13 @@ ul {
 }
 
 /* Tradition section */
+.tradition-sections {
+  padding-top: 96px;
+}
+
+.tradition-title {
+  margin-bottom: 42px;
+}
 
 .tradition-text .brand {
   color: var(--color-brend);
@@ -132,8 +171,13 @@ ul {
 
 /* cookers-section */
 .cookers-title {
+  margin-bottom: 16px;
   font-size: 40px;
   font-weight: 600;
+}
+
+.cooker-title {
+  margin-bottom: 80px;
 }
 
 /* formats-sections */
@@ -142,9 +186,17 @@ ul {
   font-weight: 600;
 }
 
+.formats-title {
+  margin-bottom: 80px;
+}
+
 .format-text {
   font-size: 14px;
   font-weight: 300;
+}
+
+.contakt-title {
+  margin-bottom: 16px;
 }
 
 /* Footer */
